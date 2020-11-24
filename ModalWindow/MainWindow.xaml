@@ -1,0 +1,71 @@
+﻿<Window x:Class="ModalWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModalWindow"
+        xmlns:UControl="clr-namespace:UControl;assembly=UControl"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="GridContainer">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.DataContext>
+            <UControl:Modal x:Name="modalUserControl"/>
+        </Grid.DataContext>
+
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="AliceBlue">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                <Button x:Name="Button_Display_On" Margin="20" Content="화면 켬" />
+                <Button x:Name="Button_Display_Off" Margin="20" Content="화면 끔" />
+                <Button x:Name="Button_Modal_Close" Margin="20" Content="모달 닫기"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Panel.ZIndex="-1">
+            <Grid Grid.Column="1" Background="Black"/>
+            <Grid x:Name="Display" Grid.Column="1" Background="LightCyan">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <WrapPanel Grid.Row="0" Orientation="Vertical">
+                    <Button x:Name="BottomButton_6" Margin="10" Width="50" Height="50" Content=""/>
+                    <Button x:Name="BottomButton_7" Margin="10" Width="50" Height="50" Content=""/>
+                    <Button x:Name="BottomButton_8" Margin="10" Width="50" Height="50" Content=""/>
+                    <Button x:Name="BottomButton_9" Margin="10" Width="50" Height="50" Content=""/>
+                </WrapPanel>
+
+                <StackPanel Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button x:Name="BottomButton_1" Margin="11" Width="30" Content="1"/>
+                    <Button x:Name="BottomButton_2" Margin="11" Width="30" Content="2"/>
+                    <Button x:Name="BottomButton_3" Margin="11" Width="30" Content="3"/>
+                    <Button x:Name="BottomButton_4" Margin="11" Width="30" Content="4"/>
+                    <Button x:Name="BottomButton_5" Margin="11" Width="30" Content="5"/>
+                </StackPanel>
+
+                <Canvas x:Name="canvas" Grid.RowSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </Grid>
+        </Grid>
+
+
+        <Grid Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="AliceBlue">
+
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="AliceBlue">
+
+        </Grid>
+
+    </Grid>
+</Window>
