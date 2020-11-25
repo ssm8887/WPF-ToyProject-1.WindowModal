@@ -49,6 +49,7 @@ namespace ModalWindow
 
         private void BottomButton_2_Click(object sender, RoutedEventArgs e)
         {
+            // 라이브러리 참고용
             var childWindow = new ChildWindow();
             childWindow.Width = 200;
             childWindow.Height = 160;
@@ -88,7 +89,6 @@ namespace ModalWindow
             uc.Height = 150;
 
             this.canvas.Children.Add(uc);
-            //((FrameworkElement)this.canvas.Parent).hit
         }
 
     }

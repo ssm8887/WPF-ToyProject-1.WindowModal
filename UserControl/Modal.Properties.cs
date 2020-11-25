@@ -27,6 +27,12 @@ namespace UControl
             }
         }
 
+
+        /// <summary>
+        /// 모달창 생성시 배경 Control(ex. Button, ToggleButton, Checkbox 등 모든 컨트롤) 작동 상태
+        /// True - 모달을 제외한 Control 이벤트 차단
+        /// False - 모든 컨트롤 이벤트 발생 
+        /// </summary>
         public bool IsModal
         {
             get => isModal;
@@ -37,7 +43,7 @@ namespace UControl
 
                 if (isModal)
                 {
-                    CustomModal();
+                    CreateModalBackground();
                 }
             }
         }
