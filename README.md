@@ -29,11 +29,11 @@
 
 | 실행화면 			| 모달 생성시 			|
 | ------------ 			| ------------ 			|
-| ![image.png](/yobi/files/229) | ![image.png](/yobi/files/230) |
+| ![1](./image01.png) | ![2](./image02.png) |
 
 | 모달최대화 			| 화면 끔 버튼 클릭시		|
 | ------------ 			| ------------ 			|
-| ![image.png](/yobi/files/231) | ![image.png](/yobi/files/232) |
+| ![image.png](./image03.png) | ![image.png](./image04.png) |
 
 + ### 소스코드
 	+ Git – https://github.com/ssm8887/WPF-ToyProject-1.WindowModal
