@@ -17,13 +17,13 @@
 
 + ### 참조 URL
 	+ WPF Canvas에서의 Element Drag기능 구현
-	https://stackoverflow.com/questions/1495408/how-to-drag-a-usercontrol-inside-a-canvas#
+	https://stackoverflow.com/questions/1495408/how-to-drag-a-usercontrol-inside-a-canvas  
 
 	+ WPF ClickEvent Bubbling 차단
-	https://dotnetmvp.tistory.com/32#
+	https://dotnetmvp.tistory.com/32  
 
 	+ 같은 컨셉으로 구현되있는 라이브러리 설명
-	https://stackoverflow.com/questions/30407331/c-sharp-wpf-child-windows-inside-main-window#
+	https://stackoverflow.com/questions/30407331/c-sharp-wpf-child-windows-inside-main-window  
 
 + ### 구동 화면
 
